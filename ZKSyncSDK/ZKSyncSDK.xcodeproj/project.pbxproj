@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F632CC3F2541375F00C48201 /* ZKSyncSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F632CC3D2541375F00C48201 /* ZKSyncSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6730FAF25429D4100052101 /* ZKSyncSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730FAE25429D4100052101 /* ZKSyncSDKTests.swift */; };
+		F6730FB125429D4100052101 /* ZKSyncSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F632CC3A2541375F00C48201 /* ZKSyncSDK.framework */; };
+		F6ACFF0025414AF200019C73 /* zks_crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F6ACFEFE25414AF200019C73 /* zks_crypto.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F6ACFF0325414B1700019C73 /* ZKSyncSDK+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFF0125414B1700019C73 /* ZKSyncSDK+Types.swift */; };
+		F6ACFF0425414B1700019C73 /* ZKSyncSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFF0225414B1700019C73 /* ZKSyncSDK.swift */; };
+		F6ACFF1125416A9500019C73 /* libzks_crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ACFEFD25414AF200019C73 /* libzks_crypto.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6730FB225429D4100052101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F632CC312541375F00C48201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F632CC392541375F00C48201;
+			remoteInfo = ZKSyncSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F632CC3A2541375F00C48201 /* ZKSyncSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKSyncSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F632CC3D2541375F00C48201 /* ZKSyncSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKSyncSDK.h; sourceTree = "<group>"; };
+		F632CC3E2541375F00C48201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6730FAC25429D4100052101 /* ZKSyncSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKSyncSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6730FAE25429D4100052101 /* ZKSyncSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSyncSDKTests.swift; sourceTree = "<group>"; };
+		F6730FB025429D4100052101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6ACFEFD25414AF200019C73 /* libzks_crypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzks_crypto.a; sourceTree = "<group>"; };
+		F6ACFEFE25414AF200019C73 /* zks_crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zks_crypto.h; sourceTree = "<group>"; };
+		F6ACFF0125414B1700019C73 /* ZKSyncSDK+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZKSyncSDK+Types.swift"; sourceTree = "<group>"; };
+		F6ACFF0225414B1700019C73 /* ZKSyncSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKSyncSDK.swift; sourceTree = "<group>"; };
+		F6ACFF06254152C400019C73 /* ZKSyncSDK.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = ZKSyncSDK.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F632CC372541375F00C48201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ACFF1125416A9500019C73 /* libzks_crypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730FA925429D4100052101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730FB125429D4100052101 /* ZKSyncSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F632CC302541375F00C48201 = {
+			isa = PBXGroup;
+			children = (
+				F632CC3C2541375F00C48201 /* ZKSyncSDK */,
+				F6730FAD25429D4100052101 /* ZKSyncSDKTests */,
+				F632CC3B2541375F00C48201 /* Products */,
+				F6ACFF1025416A8E00019C73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F632CC3B2541375F00C48201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F632CC3A2541375F00C48201 /* ZKSyncSDK.framework */,
+				F6730FAC25429D4100052101 /* ZKSyncSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F632CC3C2541375F00C48201 /* ZKSyncSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F632CC3D2541375F00C48201 /* ZKSyncSDK.h */,
+				F6ACFF0125414B1700019C73 /* ZKSyncSDK+Types.swift */,
+				F6ACFF0225414B1700019C73 /* ZKSyncSDK.swift */,
+				F6ACFF06254152C400019C73 /* ZKSyncSDK.modulemap */,
+				F6ACFF052541527700019C73 /* libzks */,
+				F632CC3E2541375F00C48201 /* Info.plist */,
+			);
+			path = ZKSyncSDK;
+			sourceTree = "<group>";
+		};
+		F6730FAD25429D4100052101 /* ZKSyncSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6730FAE25429D4100052101 /* ZKSyncSDKTests.swift */,
+				F6730FB025429D4100052101 /* Info.plist */,
+			);
+			path = ZKSyncSDKTests;
+			sourceTree = "<group>";
+		};
+		F6ACFF052541527700019C73 /* libzks */ = {
+			isa = PBXGroup;
+			children = (
+				F6ACFEFD25414AF200019C73 /* libzks_crypto.a */,
+				F6ACFEFE25414AF200019C73 /* zks_crypto.h */,
+			);
+			path = libzks;
+			sourceTree = "<group>";
+		};
+		F6ACFF1025416A8E00019C73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F632CC352541375F00C48201 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F632CC3F2541375F00C48201 /* ZKSyncSDK.h in Headers */,
+				F6ACFF0025414AF200019C73 /* zks_crypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F632CC392541375F00C48201 /* ZKSyncSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F632CC422541375F00C48201 /* Build configuration list for PBXNativeTarget "ZKSyncSDK" */;
+			buildPhases = (
+				F632CC352541375F00C48201 /* Headers */,
+				F632CC362541375F00C48201 /* Sources */,
+				F632CC372541375F00C48201 /* Frameworks */,
+				F632CC382541375F00C48201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZKSyncSDK;
+			productName = ZKSyncSDK;
+			productReference = F632CC3A2541375F00C48201 /* ZKSyncSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6730FAB25429D4100052101 /* ZKSyncSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6730FB625429D4100052101 /* Build configuration list for PBXNativeTarget "ZKSyncSDKTests" */;
+			buildPhases = (
+				F6730FA825429D4100052101 /* Sources */,
+				F6730FA925429D4100052101 /* Frameworks */,
+				F6730FAA25429D4100052101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6730FB325429D4100052101 /* PBXTargetDependency */,
+			);
+			name = ZKSyncSDKTests;
+			productName = ZKSyncSDKTests;
+			productReference = F6730FAC25429D4100052101 /* ZKSyncSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F632CC312541375F00C48201 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = sirintellect;
+				TargetAttributes = {
+					F632CC392541375F00C48201 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					F6730FAB25429D4100052101 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = F632CC342541375F00C48201 /* Build configuration list for PBXProject "ZKSyncSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F632CC302541375F00C48201;
+			productRefGroup = F632CC3B2541375F00C48201 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F632CC392541375F00C48201 /* ZKSyncSDK */,
+				F6730FAB25429D4100052101 /* ZKSyncSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F632CC382541375F00C48201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730FAA25429D4100052101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F632CC362541375F00C48201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ACFF0425414B1700019C73 /* ZKSyncSDK.swift in Sources */,
+				F6ACFF0325414B1700019C73 /* ZKSyncSDK+Types.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6730FA825429D4100052101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6730FAF25429D4100052101 /* ZKSyncSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6730FB325429D4100052101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F632CC392541375F00C48201 /* ZKSyncSDK */;
+			targetProxy = F6730FB225429D4100052101 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F632CC402541375F00C48201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F632CC412541375F00C48201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F632CC432541375F00C48201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44AT5XMQNT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ZKSyncSDK/libzks";
+				INFOPLIST_FILE = ZKSyncSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZKSyncSDK",
+					"$(PROJECT_DIR)/ZKSyncSDK/libzks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "$(PROJECT_DIR)/ZKSyncSDK/ZKSyncSDK.modulemap";
+				MODULEMAP_PRIVATE_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/ZKSyncSDK/libzks";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		F632CC442541375F00C48201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44AT5XMQNT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ZKSyncSDK/libzks";
+				INFOPLIST_FILE = ZKSyncSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZKSyncSDK",
+					"$(PROJECT_DIR)/ZKSyncSDK/libzks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "$(PROJECT_DIR)/ZKSyncSDK/ZKSyncSDK.modulemap";
+				MODULEMAP_PRIVATE_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/ZKSyncSDK/libzks";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		F6730FB425429D4100052101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44AT5XMQNT;
+				INFOPLIST_FILE = ZKSyncSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6730FB525429D4100052101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44AT5XMQNT;
+				INFOPLIST_FILE = ZKSyncSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F632CC342541375F00C48201 /* Build configuration list for PBXProject "ZKSyncSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F632CC402541375F00C48201 /* Debug */,
+				F632CC412541375F00C48201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F632CC422541375F00C48201 /* Build configuration list for PBXNativeTarget "ZKSyncSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F632CC432541375F00C48201 /* Debug */,
+				F632CC442541375F00C48201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6730FB625429D4100052101 /* Build configuration list for PBXNativeTarget "ZKSyncSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6730FB425429D4100052101 /* Debug */,
+				F6730FB525429D4100052101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F632CC312541375F00C48201 /* Project object */;
+}
