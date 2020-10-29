@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   Cryptographical primitives used in zkSync network.
                    DESC
 
-  spec.homepage     = "https://github.com/matter-labs/zksync-sdk"
+  spec.homepage     = "https://github.com/matter-labs/zksync-sdk-swift"
   spec.license      = "MIT"
 
   spec.author             = { "The Matter Labs team" => "hello@matterlabs.dev" }
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   # spec.tvos.deployment_target = "9.0"
 
 
-  spec.source       = { :git => "https://github.com/matter-labs/zksync-sdk.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/matter-labs/zksync-sdk-swift.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "ZKSyncSDK/**/*.{swift,h}"
   spec.module_map = 'ZKSyncSDK/ZKSyncSDK.modulemap'
