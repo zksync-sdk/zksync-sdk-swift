@@ -13,7 +13,7 @@
 ## Installation
 
 * CocoaPods: `pod 'ZKSyncSDK'`
-* Carthage: `github "matter-labs/zksync-sdk/swift"`
+* Carthage: `github "zksync-sdk/zksync-sdk-swift"`
 
 
 ## License
