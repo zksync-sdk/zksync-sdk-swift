@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ZKSyncSDK"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Cryptographical primitives used in zkSync network."
 
   spec.description  = <<-DESC
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "ZKSyncSDK/ZKSyncSDK/**/*.{swift,h}"
   spec.preserve_paths = 'ZKSyncSDK/ZKSyncSDK/*.{modulemap}'
   spec.vendored_libraries = "ZKSyncSDK/ZKSyncSDK/libzks/*.{a}"
-  spec.module_map = "ZKSyncSDK/ZKSyncSDK/ZKSyncSDK.modulemap"
+  # spec.module_map = "ZKSyncSDK/ZKSyncSDK/ZKSyncSDK.modulemap"
 
   # spec.xcconfig = { :VALID_ARCHS => 'arm64 arm64e armv7 armv7s x86_64' }
   spec.pod_target_xcconfig = { :VALID_ARCHS => 'arm64 arm64e armv7 armv7s x86_64' }

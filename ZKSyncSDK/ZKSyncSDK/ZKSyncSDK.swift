@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ZKSyncSDK.ZKCryptoKit
 
 /**
 * Access to the ZksCrypto native library
