@@ -14,13 +14,13 @@ public class ZKPrimitive {
     
     private var content: Data
     
-    init(_ content: Data) {
+    public init(_ content: Data) {
         assert(content.count == Self.bytesLength, "Incorrect data length. Should be \(Self.bytesLength)")
 
         self.content = content
     }
     
-    convenience init(_ content: [UInt8]) {
+    public convenience init(_ content: [UInt8]) {
         self.init(Data(content))
     }
     
@@ -48,7 +48,7 @@ public class ZKPackedPublicKey: ZKPrimitive {
 }
 
 public class ZKPrivateKey: ZKPrimitive {
-    override class var bytesLength: Int {
+    override public class var bytesLength: Int {
         return 32
     }
 }
