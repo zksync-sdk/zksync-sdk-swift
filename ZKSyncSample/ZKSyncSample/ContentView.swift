@@ -63,7 +63,7 @@ class ContentViewModel: ObservableObject {
         case .success(let result):
             return result
 
-        case .error(let error):
+        case .failure(let error):
             let _ = Alert(title: Text(error.localizedDescription))
             return nil
         }
@@ -74,7 +74,7 @@ class ContentViewModel: ObservableObject {
         case .success(let result):
             return result
             
-        case .error(let error):
+        case .failure(let error):
             let _ = Alert(title: Text(error.localizedDescription))
             return nil
         }
@@ -85,7 +85,7 @@ class ContentViewModel: ObservableObject {
         case .success(let result):
             return result
             
-        case .error(let error):
+        case .failure(let error):
             let _ = Alert(title: Text(error.localizedDescription))
             return nil
         }
@@ -96,7 +96,7 @@ class ContentViewModel: ObservableObject {
         case .success(let result):
             return result
             
-        case .error(let error):
+        case .failure(let error):
             let _ = Alert(title: Text(error.localizedDescription))
             return nil
         }

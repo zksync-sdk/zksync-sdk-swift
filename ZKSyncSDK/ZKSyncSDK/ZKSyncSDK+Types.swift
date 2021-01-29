@@ -72,12 +72,6 @@ public enum ZKSyncSDKError: Error {
     case unsupportedOperation
 }
 
-public enum ZKSyncSDKResult<T> {
-    case success(_ result: T)
-    case error(_ error: Error)
-}
-
-
 typealias CLibZksPrivateKey = ZksPrivateKey
 typealias CLibZksPackedPublicKey = ZksPackedPublicKey
 typealias CLibZksPubkeyHash = ZksPubkeyHash
