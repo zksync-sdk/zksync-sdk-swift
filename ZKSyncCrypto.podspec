@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "ZKSyncSDK"
+  spec.name         = "ZKSyncCrypto"
   spec.version      = "0.0.5"
   spec.summary      = "Cryptographical primitives used in zkSync network."
 
