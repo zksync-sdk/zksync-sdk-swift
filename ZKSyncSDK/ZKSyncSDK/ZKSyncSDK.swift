@@ -15,7 +15,7 @@ import Foundation
 */
 public class ZKSyncSDK: NSObject {
     
-    static public func generatePrivateKey(seed: Data) -> ZKSyncSDKResult<ZKPrivateKey> {
+    static public func generatePrivateKey(seed: Data) -> Result<ZKPrivateKey, ZKSyncSDKError> {
         return seed.withUnsafeBytes { seedBufferRaw in
             let seedBuffer: UnsafePointer<UInt8> = seedBufferRaw.baseAddress!.assumingMemoryBound(to: UInt8.self)
             let result = UnsafeMutablePointer<CLibZksPrivateKey>.allocate(capacity: 1)
@@ -29,15 +29,15 @@ public class ZKSyncSDK: NSObject {
                 return .success(ZKPrivateKey(bufferPointer))
                 
             case PRIVATE_KEY_FROM_SEED_SEED_TOO_SHORT:
-                return .error(ZKSyncSDKError.seedTooShortError)
+                return .failure(.seedTooShortError)
                 
             default:
-                return .error(ZKSyncSDKError.unsupportedOperation)
+                return .failure(.unsupportedOperation)
             }
         }
     }
     
-    static public func getPublicKey(privateKey: ZKPrivateKey) -> ZKSyncSDKResult<ZKPackedPublicKey> {
+    static public func getPublicKey(privateKey: ZKPrivateKey) -> Result<ZKPackedPublicKey, ZKSyncSDKError> {
         return privateKey.withUnsafeBytes { bufferRaw in
             let privateKeyBuffer: UnsafePointer<UInt8> = bufferRaw.baseAddress!.assumingMemoryBound(to: UInt8.self)
             
@@ -59,12 +59,12 @@ public class ZKSyncSDK: NSObject {
                 return .success(ZKPackedPublicKey(bufferPointer))
                 
             default:
-                return .error(ZKSyncSDKError.unsupportedOperation)
+                return .failure(.unsupportedOperation)
             }
         }
     }
     
-    static public func getPublicKeyHash(publicKey: ZKPackedPublicKey) -> ZKSyncSDKResult<ZKPublicHash> {
+    static public func getPublicKeyHash(publicKey: ZKPackedPublicKey) -> Result<ZKPublicHash, ZKSyncSDKError> {
         return publicKey.withUnsafeBytes { bufferRaw in
             let publicKeyBuffer: UnsafePointer<UInt8> = bufferRaw.baseAddress!.assumingMemoryBound(to: UInt8.self)
 
@@ -86,20 +86,20 @@ public class ZKSyncSDK: NSObject {
                 return .success(ZKPublicHash(bufferPointer))
 
             default:
-                return .error(ZKSyncSDKError.unsupportedOperation)
+                return .failure(.unsupportedOperation)
             }
         }
     }
     
-    static public func signMessage(privateKey: ZKPrivateKey, message: String) -> ZKSyncSDKResult<ZKSignature> {
+    static public func signMessage(privateKey: ZKPrivateKey, message: String) -> Result<ZKSignature, ZKSyncSDKError> {
         guard let messageData = message.data(using: .utf8) else {
-            return .error(ZKSyncSDKError.unsupportedOperation)
+            return .failure(.unsupportedOperation)
         }
         
         return signMessage(privateKey: privateKey, message: messageData)
     }
     
-    static public func signMessage(privateKey: ZKPrivateKey, message: Data) -> ZKSyncSDKResult<ZKSignature> {
+    static public func signMessage(privateKey: ZKPrivateKey, message: Data) -> Result<ZKSignature, ZKSyncSDKError> {
         return privateKey.withUnsafeBytes { bufferRaw in
             return message.withUnsafeBytes { messageRaw in
                 let privateKeyBuffer: UnsafePointer<UInt8> = bufferRaw.baseAddress!.assumingMemoryBound(to: UInt8.self)
@@ -123,10 +123,10 @@ public class ZKSyncSDK: NSObject {
                     return .success(ZKSignature(bufferPointer))
 
                 case MUSIG_SIGN_MSG_TOO_LONG:
-                    return .error(ZKSyncSDKError.musigTooLongError)
+                    return .failure(.musigTooLongError)
                     
                 default:
-                    return .error(ZKSyncSDKError.unsupportedOperation)
+                    return .failure(.unsupportedOperation)
                 }
             }
         }

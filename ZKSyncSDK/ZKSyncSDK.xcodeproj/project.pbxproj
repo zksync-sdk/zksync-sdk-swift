@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47B1957425C444140011148B /* libzkscrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B1957325C444140011148B /* libzkscrypto.a */; };
 		F632CC3F2541375F00C48201 /* ZKSyncSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F632CC3D2541375F00C48201 /* ZKSyncSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6730FAF25429D4100052101 /* ZKSyncSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730FAE25429D4100052101 /* ZKSyncSDKTests.swift */; };
 		F6730FB125429D4100052101 /* ZKSyncSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F632CC3A2541375F00C48201 /* ZKSyncSDK.framework */; };
 		F6ACFF0025414AF200019C73 /* zks_crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F6ACFEFE25414AF200019C73 /* zks_crypto.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F6ACFF0325414B1700019C73 /* ZKSyncSDK+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFF0125414B1700019C73 /* ZKSyncSDK+Types.swift */; };
 		F6ACFF0425414B1700019C73 /* ZKSyncSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFF0225414B1700019C73 /* ZKSyncSDK.swift */; };
-		F6ACFF1125416A9500019C73 /* libzks_crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ACFEFD25414AF200019C73 /* libzks_crypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +27,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47B1957325C444140011148B /* libzkscrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzkscrypto.a; sourceTree = "<group>"; };
 		F632CC3A2541375F00C48201 /* ZKSyncSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKSyncSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F632CC3D2541375F00C48201 /* ZKSyncSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKSyncSDK.h; sourceTree = "<group>"; };
 		F632CC3E2541375F00C48201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6730FAC25429D4100052101 /* ZKSyncSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKSyncSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6730FAE25429D4100052101 /* ZKSyncSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSyncSDKTests.swift; sourceTree = "<group>"; };
 		F6730FB025429D4100052101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6ACFEFD25414AF200019C73 /* libzks_crypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzks_crypto.a; sourceTree = "<group>"; };
 		F6ACFEFE25414AF200019C73 /* zks_crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zks_crypto.h; sourceTree = "<group>"; };
 		F6ACFF0125414B1700019C73 /* ZKSyncSDK+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZKSyncSDK+Types.swift"; sourceTree = "<group>"; };
 		F6ACFF0225414B1700019C73 /* ZKSyncSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKSyncSDK.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6ACFF1125416A9500019C73 /* libzks_crypto.a in Frameworks */,
+				47B1957425C444140011148B /* libzkscrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		F6ACFF052541527700019C73 /* libzks */ = {
 			isa = PBXGroup;
 			children = (
-				F6ACFEFD25414AF200019C73 /* libzks_crypto.a */,
+				47B1957325C444140011148B /* libzkscrypto.a */,
 				F6ACFEFE25414AF200019C73 /* zks_crypto.h */,
 			);
 			path = libzks;
@@ -400,7 +400,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "$(PROJECT_DIR)/ZKSyncSDK/ZKSyncSDK.modulemap";
 				MODULEMAP_PRIVATE_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = "matter-labs.ZKSyncSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/ZKSyncSDK/libzks";
@@ -441,7 +441,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "$(PROJECT_DIR)/ZKSyncSDK/ZKSyncSDK.modulemap";
 				MODULEMAP_PRIVATE_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = "matter-labs.ZKSyncSDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/ZKSyncSDK/libzks";
@@ -464,7 +464,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDKTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "matter-labs.ZKSyncSDKTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +482,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSDKTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "matter-labs.ZKSyncSDKTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
