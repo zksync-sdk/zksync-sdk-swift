@@ -1,5 +1,5 @@
 PODS:
-  - ZKSyncCrypto (0.0.7)
+  - ZKSyncCrypto (0.0.8)
 
 DEPENDENCIES:
   - ZKSyncCrypto (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZKSyncCrypto: 4712bd3e0ae3b7dc4f16244bb3afb9b56b757dff
+  ZKSyncCrypto: cd6c4ade32c77a1a0af3ba370c1deb6b75e9a513
 
 PODFILE CHECKSUM: 79f46bd6ec3094c9c10dc4adde929fb6ae768e78
 

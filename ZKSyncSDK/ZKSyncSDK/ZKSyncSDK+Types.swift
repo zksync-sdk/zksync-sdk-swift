@@ -65,6 +65,12 @@ public class ZKSignature: ZKPrimitive {
     }
 }
 
+public class ZKResqueHash: ZKPrimitive {
+    override class var bytesLength: Int {
+        return 31
+    }
+}
+
 
 public enum ZKSyncSDKError: Error {
     case musigTooLongError
@@ -76,4 +82,4 @@ typealias CLibZksPrivateKey = ZksPrivateKey
 typealias CLibZksPackedPublicKey = ZksPackedPublicKey
 typealias CLibZksPubkeyHash = ZksPubkeyHash
 typealias CLibZksSignature = ZksSignature
-
+typealias CLibZksResqueHash = ZksResqueHash
