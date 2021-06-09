@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44FAB4CA2670CCFB000B5292 /* ZKSyncSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB4C92670CCFB000B5292 /* ZKSyncSampleTests.swift */; };
 		44FAB4DB2670CDC6000B5292 /* ZKSyncSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB4DA2670CDC6000B5292 /* ZKSyncSDKTests.swift */; };
 		8111E3A74DF8516C46D5F318 /* Pods_ZKSyncSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C383FD6FC59B7BAEC3685A /* Pods_ZKSyncSampleTests.framework */; };
 		8848C671599C5F24BAB62A5E /* Pods_ZKSyncSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E4E1CA802FCFCE9FE9C2DD /* Pods_ZKSyncSample.framework */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		11C383FD6FC59B7BAEC3685A /* Pods_ZKSyncSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKSyncSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FAB4C72670CCFB000B5292 /* ZKSyncSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKSyncSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44FAB4C92670CCFB000B5292 /* ZKSyncSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKSyncSampleTests.swift; sourceTree = "<group>"; };
 		44FAB4CB2670CCFB000B5292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44FAB4DA2670CDC6000B5292 /* ZKSyncSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKSyncSDKTests.swift; sourceTree = "<group>"; };
 		46E4E1CA802FCFCE9FE9C2DD /* Pods_ZKSyncSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKSyncSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +72,6 @@
 		44FAB4C82670CCFB000B5292 /* ZKSyncSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				44FAB4C92670CCFB000B5292 /* ZKSyncSampleTests.swift */,
 				44FAB4DA2670CDC6000B5292 /* ZKSyncSDKTests.swift */,
 				44FAB4CB2670CCFB000B5292 /* Info.plist */,
 			);
@@ -313,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FAB4DB2670CDC6000B5292 /* ZKSyncSDKTests.swift in Sources */,
-				44FAB4CA2670CCFB000B5292 /* ZKSyncSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
