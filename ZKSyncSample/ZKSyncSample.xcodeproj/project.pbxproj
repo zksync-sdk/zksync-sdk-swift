@@ -3,20 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44FAB4DB2670CDC6000B5292 /* ZKSyncSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB4DA2670CDC6000B5292 /* ZKSyncSDKTests.swift */; };
+		8111E3A74DF8516C46D5F318 /* Pods_ZKSyncSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C383FD6FC59B7BAEC3685A /* Pods_ZKSyncSampleTests.framework */; };
+		8848C671599C5F24BAB62A5E /* Pods_ZKSyncSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E4E1CA802FCFCE9FE9C2DD /* Pods_ZKSyncSample.framework */; };
 		F6ACFEEA254142B300019C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFEE9254142B300019C73 /* AppDelegate.swift */; };
 		F6ACFEEC254142B300019C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFEEB254142B300019C73 /* SceneDelegate.swift */; };
 		F6ACFEEE254142B300019C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFEED254142B300019C73 /* ContentView.swift */; };
 		F6ACFEF0254142B300019C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ACFEEF254142B300019C73 /* Assets.xcassets */; };
 		F6ACFEF3254142B300019C73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6ACFEF2254142B300019C73 /* Preview Assets.xcassets */; };
 		F6ACFEF6254142B300019C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6ACFEF4254142B300019C73 /* LaunchScreen.storyboard */; };
-		F6ACFF0F2541666B00019C73 /* ZKSyncSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ACFF0E2541666B00019C73 /* ZKSyncSDK.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		44FAB4CC2670CCFB000B5292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6ACFEDE254142B200019C73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6ACFEE5254142B200019C73;
+			remoteInfo = ZKSyncSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		11C383FD6FC59B7BAEC3685A /* Pods_ZKSyncSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKSyncSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FAB4C72670CCFB000B5292 /* ZKSyncSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKSyncSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FAB4CB2670CCFB000B5292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FAB4DA2670CDC6000B5292 /* ZKSyncSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKSyncSDKTests.swift; sourceTree = "<group>"; };
+		46E4E1CA802FCFCE9FE9C2DD /* Pods_ZKSyncSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKSyncSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C49AE0779D39C9E924563E /* Pods-ZKSyncSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKSyncSampleTests.release.xcconfig"; path = "Target Support Files/Pods-ZKSyncSampleTests/Pods-ZKSyncSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C455E29977733B68C0C0416 /* Pods-ZKSyncSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKSyncSample.debug.xcconfig"; path = "Target Support Files/Pods-ZKSyncSample/Pods-ZKSyncSample.debug.xcconfig"; sourceTree = "<group>"; };
+		A01DED6C3BB79995481939D3 /* Pods-ZKSyncSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKSyncSample.release.xcconfig"; path = "Target Support Files/Pods-ZKSyncSample/Pods-ZKSyncSample.release.xcconfig"; sourceTree = "<group>"; };
+		B20016FE45A1ED7CFF285FFB /* Pods-ZKSyncSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKSyncSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ZKSyncSampleTests/Pods-ZKSyncSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6ACFEE6254142B200019C73 /* ZKSyncSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKSyncSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ACFEE9254142B300019C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6ACFEEB254142B300019C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,23 +50,53 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		44FAB4C42670CCFB000B5292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8111E3A74DF8516C46D5F318 /* Pods_ZKSyncSampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6ACFEE3254142B200019C73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6ACFF0F2541666B00019C73 /* ZKSyncSDK.framework in Frameworks */,
+				8848C671599C5F24BAB62A5E /* Pods_ZKSyncSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44FAB4C82670CCFB000B5292 /* ZKSyncSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				44FAB4DA2670CDC6000B5292 /* ZKSyncSDKTests.swift */,
+				44FAB4CB2670CCFB000B5292 /* Info.plist */,
+			);
+			path = ZKSyncSampleTests;
+			sourceTree = "<group>";
+		};
+		A572789E489E22628138A5DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C455E29977733B68C0C0416 /* Pods-ZKSyncSample.debug.xcconfig */,
+				A01DED6C3BB79995481939D3 /* Pods-ZKSyncSample.release.xcconfig */,
+				B20016FE45A1ED7CFF285FFB /* Pods-ZKSyncSampleTests.debug.xcconfig */,
+				47C49AE0779D39C9E924563E /* Pods-ZKSyncSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F6ACFEDD254142B200019C73 = {
 			isa = PBXGroup;
 			children = (
 				F6ACFEE8254142B200019C73 /* ZKSyncSample */,
+				44FAB4C82670CCFB000B5292 /* ZKSyncSampleTests */,
 				F6ACFEE7254142B200019C73 /* Products */,
 				F6ACFF07254162E600019C73 /* Frameworks */,
+				A572789E489E22628138A5DB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F6ACFEE6254142B200019C73 /* ZKSyncSample.app */,
+				44FAB4C72670CCFB000B5292 /* ZKSyncSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				F6ACFF0E2541666B00019C73 /* ZKSyncSDK.framework */,
+				46E4E1CA802FCFCE9FE9C2DD /* Pods_ZKSyncSample.framework */,
+				11C383FD6FC59B7BAEC3685A /* Pods_ZKSyncSampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,13 +144,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		44FAB4C62670CCFB000B5292 /* ZKSyncSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44FAB4D02670CCFB000B5292 /* Build configuration list for PBXNativeTarget "ZKSyncSampleTests" */;
+			buildPhases = (
+				3EF9E13482D657B5EBFD0B3E /* [CP] Check Pods Manifest.lock */,
+				44FAB4C32670CCFB000B5292 /* Sources */,
+				44FAB4C42670CCFB000B5292 /* Frameworks */,
+				44FAB4C52670CCFB000B5292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44FAB4CD2670CCFB000B5292 /* PBXTargetDependency */,
+			);
+			name = ZKSyncSampleTests;
+			productName = ZKSyncSampleTests;
+			productReference = 44FAB4C72670CCFB000B5292 /* ZKSyncSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F6ACFEE5254142B200019C73 /* ZKSyncSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6ACFEFA254142B300019C73 /* Build configuration list for PBXNativeTarget "ZKSyncSample" */;
 			buildPhases = (
+				01D8EFC1E45BAF4C9040713A /* [CP] Check Pods Manifest.lock */,
 				F6ACFEE2254142B200019C73 /* Sources */,
 				F6ACFEE3254142B200019C73 /* Frameworks */,
 				F6ACFEE4254142B200019C73 /* Resources */,
+				286134268F2DD4B975DE51CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,10 +188,14 @@
 		F6ACFEDE254142B200019C73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = sirintellect;
 				TargetAttributes = {
+					44FAB4C62670CCFB000B5292 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F6ACFEE5254142B200019C73;
+					};
 					F6ACFEE5254142B200019C73 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -136,11 +215,19 @@
 			projectRoot = "";
 			targets = (
 				F6ACFEE5254142B200019C73 /* ZKSyncSample */,
+				44FAB4C62670CCFB000B5292 /* ZKSyncSampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		44FAB4C52670CCFB000B5292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6ACFEE4254142B200019C73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +240,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01D8EFC1E45BAF4C9040713A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZKSyncSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		286134268F2DD4B975DE51CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZKSyncSample/Pods-ZKSyncSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZKSyncSample/Pods-ZKSyncSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZKSyncSample/Pods-ZKSyncSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EF9E13482D657B5EBFD0B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZKSyncSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		44FAB4C32670CCFB000B5292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FAB4DB2670CDC6000B5292 /* ZKSyncSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6ACFEE2254142B200019C73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +324,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44FAB4CD2670CCFB000B5292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6ACFEE5254142B200019C73 /* ZKSyncSample */;
+			targetProxy = 44FAB4CC2670CCFB000B5292 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6ACFEF4254142B300019C73 /* LaunchScreen.storyboard */ = {
@@ -178,6 +345,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		44FAB4CE2670CCFB000B5292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20016FE45A1ED7CFF285FFB /* Pods-ZKSyncSampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2RL54QKRY;
+				INFOPLIST_FILE = ZKSyncSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.ZKSyncSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKSyncSample.app/ZKSyncSample";
+			};
+			name = Debug;
+		};
+		44FAB4CF2670CCFB000B5292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C49AE0779D39C9E924563E /* Pods-ZKSyncSampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2RL54QKRY;
+				INFOPLIST_FILE = ZKSyncSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.ZKSyncSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKSyncSample.app/ZKSyncSample";
+			};
+			name = Release;
+		};
 		F6ACFEF8254142B300019C73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -294,6 +507,7 @@
 		};
 		F6ACFEFB254142B300019C73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C455E29977733B68C0C0416 /* Pods-ZKSyncSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,7 +519,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSample;
+				PRODUCT_BUNDLE_IDENTIFIER = "matter-labs.ZKSyncSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,6 +528,7 @@
 		};
 		F6ACFEFC254142B300019C73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01DED6C3BB79995481939D3 /* Pods-ZKSyncSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -325,7 +540,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = matter-labs.ZKSyncSample;
+				PRODUCT_BUNDLE_IDENTIFIER = "matter-labs.ZKSyncSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,6 +550,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		44FAB4D02670CCFB000B5292 /* Build configuration list for PBXNativeTarget "ZKSyncSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FAB4CE2670CCFB000B5292 /* Debug */,
+				44FAB4CF2670CCFB000B5292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F6ACFEE1254142B200019C73 /* Build configuration list for PBXProject "ZKSyncSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

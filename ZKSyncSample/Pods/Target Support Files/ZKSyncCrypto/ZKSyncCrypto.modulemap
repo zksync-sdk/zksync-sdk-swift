@@ -1,0 +1,6 @@
+framework module ZKSyncCrypto {
+  umbrella header "ZKSyncCrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}

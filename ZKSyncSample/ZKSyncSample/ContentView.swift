@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import ZKSyncSDK
+import ZKSyncCrypto
 
 class ContentViewModel: ObservableObject {
     @Published var message: String = "Hello, world!"

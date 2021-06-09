@@ -132,4 +132,12 @@ public class ZKSyncSDK: NSObject {
         }
     }
     
+    static public func rescueHashOrdres(message: Data) -> ZksResqueHash {
+        return message.withUnsafeBytes { (bufferPointer) in
+            let pointer = bufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self)
+            var hash: ZksResqueHash = ZksResqueHash()
+            rescue_hash_orders(pointer, message.count, &hash)
+            return hash
+        }
+    }
 }
