@@ -7,3 +7,7 @@ xcuserdata/
 DerivedData/
 Carthage/Build/
 Pods/
+
+# Swift Package Manager
+build/
+swiftpm/
