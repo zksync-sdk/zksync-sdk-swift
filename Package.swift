@@ -21,10 +21,12 @@ let package = Package(
         .target(
             name: "ZKSyncSDK",
             dependencies: [],
-            path: "ZKSyncSDK/ZKSyncSDK"),
+            path: "ZKSyncSDK/ZKSyncSDK",
+            exclude: ["Info.plist"]),
         .testTarget(
             name: "ZKSyncSDKTests",
             dependencies: ["ZKSyncSDK"],
-            path: "ZKSyncSDK/ZKSyncSDKTests"),
+            path: "ZKSyncSDK/ZKSyncSDKTests",
+            exclude: ["Info.plist"]),
     ]
 )
