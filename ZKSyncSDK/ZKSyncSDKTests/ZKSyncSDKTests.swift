@@ -9,6 +9,7 @@ import XCTest
 import ZKSyncSDK
 
 class ZKSyncSDKTests: XCTestCase {
+    
     private var seed = Data(Array(repeating: 0, count: 32))
     private var message = "hello"
     
@@ -16,7 +17,6 @@ class ZKSyncSDKTests: XCTestCase {
         return Data(value.map { UInt8(bitPattern: $0) })
     }
     
-
     func testGeneratePrivateKey() {
         guard case let .success(privateKey) = ZKSyncSDK.generatePrivateKey(seed: seed) else {
             XCTFail("Fail generating private key")

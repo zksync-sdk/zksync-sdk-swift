@@ -8,11 +8,11 @@
 import Foundation
 
 /**
-* Access to the ZksCrypto native library
-*
-* This class provides methods for interaction the ZksCrypto native library.
-*
-*/
+ * Access to the ZksCrypto native library
+ *
+ * This class provides methods for interaction the ZksCrypto native library.
+ *
+ */
 public class ZKSyncSDK: NSObject {
     
     static public func generatePrivateKey(seed: Data) -> Result<ZKPrivateKey, ZKSyncSDKError> {

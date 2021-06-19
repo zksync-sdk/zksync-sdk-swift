@@ -16,7 +16,7 @@ public class ZKPrimitive {
     
     public init(_ content: Data) {
         assert(content.count == Self.bytesLength, "Incorrect data length. Should be \(Self.bytesLength)")
-
+        
         self.content = content
     }
     
@@ -70,7 +70,6 @@ public class ZKResqueHash: ZKPrimitive {
         return 31
     }
 }
-
 
 public enum ZKSyncSDKError: Error {
     case musigTooLongError

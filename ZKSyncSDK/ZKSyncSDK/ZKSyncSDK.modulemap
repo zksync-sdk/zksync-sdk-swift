@@ -1,4 +1,3 @@
-
 framework module ZKSyncSDK {
     umbrella header "ZKSyncSDK.h"
 
