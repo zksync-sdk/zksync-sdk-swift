@@ -9,5 +9,5 @@ Carthage/Build/
 Pods/
 
 # Swift Package Manager
-build/
-swiftpm/
+.build/
+.swiftpm/
