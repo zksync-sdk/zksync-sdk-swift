@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char ZKSyncSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZKSyncSDK/PublicHeader.h>
 
-
+#import "zks_crypto.h"
