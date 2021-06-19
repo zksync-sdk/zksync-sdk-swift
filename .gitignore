@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+xcuserdata/
+DerivedData/
+Carthage/Build/
+Pods/
