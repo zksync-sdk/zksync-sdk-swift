@@ -132,7 +132,7 @@ public class ZKSyncCrypto: NSObject {
         }
     }
     
-    static public func rescueHashOrdres(message: Data) -> ZKResqueHash {
+    static public func rescueHashOrders(message: Data) -> ZKResqueHash {
         return message.withUnsafeBytes { (bufferPointer) in
             let pointer = bufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self)
             var hash: ZksResqueHash = ZksResqueHash()
