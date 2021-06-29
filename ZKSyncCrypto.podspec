@@ -11,25 +11,19 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/zksync-sdk/zksync-sdk-swift"
   spec.license      = "MIT"
 
-  spec.author             = { "The Matter Labs team" => "hello@matterlabs.dev" }
+  spec.author       = { "The Matter Labs team" => "hello@matterlabs.dev" }
 
-  # spec.platform     = :ios
   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   spec.ios.deployment_target = "10.0"
   spec.swift_version = '5.0'
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
 
   spec.source       = { :git => "https://github.com/zksync-sdk/zksync-sdk-swift.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "ZKSyncSDK/ZKSyncSDK/**/*.{swift,h}"
-  spec.preserve_paths = 'ZKSyncSDK/ZKSyncSDK/*.{modulemap}'
-  spec.vendored_libraries = "ZKSyncSDK/ZKSyncSDK/libzks/*.{a}"
-  # spec.module_map = "ZKSyncSDK/ZKSyncSDK/ZKSyncSDK.modulemap"
+  spec.source_files = "ZKSyncCrypto/ZKSyncCrypto/**/*.{swift,h}"
+  spec.preserve_paths = 'ZKSyncCrypto/ZKSyncCrypto/*.{modulemap}'
+  spec.vendored_libraries = "ZKSyncCrypto/ZKSyncCrypto/libzks/*.{a}"
 
   # spec.xcconfig = { :VALID_ARCHS => 'arm64 arm64e armv7 armv7s x86_64' }
   spec.pod_target_xcconfig = { :VALID_ARCHS => 'arm64 arm64e armv7 armv7s x86_64' }

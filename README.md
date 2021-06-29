@@ -1,4 +1,4 @@
-# ZKSyncSDK for Swift
+# ZKSyncCrypto for Swift
 
   Cryptographical primitives used in zkSync network.
 
@@ -12,7 +12,7 @@
 
 ## Installation
 
-* CocoaPods: `pod 'ZKSyncSDK'`
+* CocoaPods: `pod 'ZKSyncCrypto'`
 * Carthage: `github "zksync-sdk/zksync-sdk-swift"`
 
 

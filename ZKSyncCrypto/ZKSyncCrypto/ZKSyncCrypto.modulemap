@@ -1,0 +1,9 @@
+framework module ZKSyncCrypto {
+    umbrella header "ZKSyncCrypto.h"
+
+    explicit module ZKCryptoKit {
+        private header "zks_crypto.h"
+    }
+    
+    export *
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ZKSyncCrypto (0.0.9)
+
+DEPENDENCIES:
+  - ZKSyncCrypto (from `../`)
+
+EXTERNAL SOURCES:
+  ZKSyncCrypto:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZKSyncCrypto: 4997bbbf94eee6ce145812d6df2e068bece010d3
+
+PODFILE CHECKSUM: dd499e3fc66117418782f71d4c1918c34cbcb0cc
+
+COCOAPODS: 1.10.1
