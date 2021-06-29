@@ -56,3 +56,9 @@ DEPENDENCIES_FOLDER="../Dependencies"
 rm -rf ${DEPENDENCIES_FOLDER}
 mkdir ${DEPENDENCIES_FOLDER}
 cp -r ZKSyncCrypto.xcframework ${DEPENDENCIES_FOLDER}
+
+# Workaround, which allows to fix build-related issue, which happens when xcframework 
+# name is similar to class name, which resides in this xcframework. More information can be found here:
+# https://developer.apple.com/forums/thread/123253
+cd ${DEPENDENCIES_FOLDER}/ZKSyncCrypto.xcframework
+find . -name "*.swiftinterface" -exec sed -i -e 's/ZKSyncCrypto\.//g' {} \;
