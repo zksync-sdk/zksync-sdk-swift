@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44FAB4DB2670CDC6000B5292 /* ZKSyncCryptoExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB4DA2670CDC6000B5292 /* ZKSyncCryptoExampleTests.swift */; };
 		F6ACFEEA254142B300019C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFEE9254142B300019C73 /* AppDelegate.swift */; };
 		F6ACFEEC254142B300019C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFEEB254142B300019C73 /* SceneDelegate.swift */; };
 		F6ACFEEE254142B300019C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ACFEED254142B300019C73 /* ContentView.swift */; };
@@ -16,20 +15,7 @@
 		F6ACFEF6254142B300019C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6ACFEF4254142B300019C73 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		44FAB4CC2670CCFB000B5292 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F6ACFEDE254142B200019C73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6ACFEE5254142B200019C73;
-			remoteInfo = ZKSyncCryptoExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		44FAB4C72670CCFB000B5292 /* ZKSyncCryptoExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKSyncCryptoExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44FAB4CB2670CCFB000B5292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44FAB4DA2670CDC6000B5292 /* ZKSyncCryptoExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKSyncCryptoExampleTests.swift; sourceTree = "<group>"; };
 		F6ACFEE6254142B200019C73 /* ZKSyncCryptoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKSyncCryptoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ACFEE9254142B300019C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6ACFEEB254142B300019C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,13 +28,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		44FAB4C42670CCFB000B5292 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F6ACFEE3254142B200019C73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,15 +38,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44FAB4C82670CCFB000B5292 /* ZKSyncCryptoExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				44FAB4DA2670CDC6000B5292 /* ZKSyncCryptoExampleTests.swift */,
-				44FAB4CB2670CCFB000B5292 /* Info.plist */,
-			);
-			path = ZKSyncCryptoExampleTests;
-			sourceTree = "<group>";
-		};
 		A572789E489E22628138A5DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				F6ACFEE8254142B200019C73 /* ZKSyncCryptoExample */,
-				44FAB4C82670CCFB000B5292 /* ZKSyncCryptoExampleTests */,
 				F6ACFEE7254142B200019C73 /* Products */,
 				F6ACFF07254162E600019C73 /* Frameworks */,
 				A572789E489E22628138A5DB /* Pods */,
@@ -90,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				F6ACFEE6254142B200019C73 /* ZKSyncCryptoExample.app */,
-				44FAB4C72670CCFB000B5292 /* ZKSyncCryptoExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,24 +96,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44FAB4C62670CCFB000B5292 /* ZKSyncCryptoExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44FAB4D02670CCFB000B5292 /* Build configuration list for PBXNativeTarget "ZKSyncCryptoExampleTests" */;
-			buildPhases = (
-				44FAB4C32670CCFB000B5292 /* Sources */,
-				44FAB4C42670CCFB000B5292 /* Frameworks */,
-				44FAB4C52670CCFB000B5292 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				44FAB4CD2670CCFB000B5292 /* PBXTargetDependency */,
-			);
-			name = ZKSyncCryptoExampleTests;
-			productName = ZKSyncCryptoExampleTests;
-			productReference = 44FAB4C72670CCFB000B5292 /* ZKSyncCryptoExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		F6ACFEE5254142B200019C73 /* ZKSyncCryptoExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6ACFEFA254142B300019C73 /* Build configuration list for PBXNativeTarget "ZKSyncCryptoExample" */;
@@ -173,10 +123,6 @@
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = sirintellect;
 				TargetAttributes = {
-					44FAB4C62670CCFB000B5292 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = F6ACFEE5254142B200019C73;
-					};
 					F6ACFEE5254142B200019C73 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -196,19 +142,11 @@
 			projectRoot = "";
 			targets = (
 				F6ACFEE5254142B200019C73 /* ZKSyncCryptoExample */,
-				44FAB4C62670CCFB000B5292 /* ZKSyncCryptoExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		44FAB4C52670CCFB000B5292 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F6ACFEE4254142B200019C73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,14 +160,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		44FAB4C32670CCFB000B5292 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44FAB4DB2670CDC6000B5292 /* ZKSyncCryptoExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F6ACFEE2254142B200019C73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,14 +171,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		44FAB4CD2670CCFB000B5292 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F6ACFEE5254142B200019C73 /* ZKSyncCryptoExample */;
-			targetProxy = 44FAB4CC2670CCFB000B5292 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6ACFEF4254142B300019C73 /* LaunchScreen.storyboard */ = {
@@ -262,48 +184,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		44FAB4CE2670CCFB000B5292 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ZKSyncCryptoExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matter-labs.ZKSyncCryptoExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKSyncCryptoExample.app/ZKSyncCryptoExample";
-			};
-			name = Debug;
-		};
-		44FAB4CF2670CCFB000B5292 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ZKSyncCryptoExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matter-labs.ZKSyncCryptoExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKSyncCryptoExample.app/ZKSyncCryptoExample";
-			};
-			name = Release;
-		};
 		F6ACFEF8254142B300019C73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,15 +343,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44FAB4D02670CCFB000B5292 /* Build configuration list for PBXNativeTarget "ZKSyncCryptoExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44FAB4CE2670CCFB000B5292 /* Debug */,
-				44FAB4CF2670CCFB000B5292 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		F6ACFEE1254142B200019C73 /* Build configuration list for PBXProject "ZKSyncCryptoExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -4,9 +4,4 @@ platform :ios, '10.0'
 
 target 'ZKSyncCryptoExample' do
   pod 'ZKSyncCrypto', :path => '../'
-
-  target 'ZKSyncCryptoExampleTests' do
-    inherit! :search_paths
-    
-  end
 end

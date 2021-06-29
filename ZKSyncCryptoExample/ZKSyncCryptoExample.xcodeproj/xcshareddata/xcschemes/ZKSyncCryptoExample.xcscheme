@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44FAB4C62670CCFB000B5292"
-               BuildableName = "ZKSyncCryptoExampleTests.xctest"
-               BlueprintName = "ZKSyncCryptoExampleTests"
-               ReferencedContainer = "container:ZKSyncCryptoExample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
