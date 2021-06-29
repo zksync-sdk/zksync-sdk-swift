@@ -85,12 +85,12 @@ class ZKSyncCryptoTests: XCTestCase {
     func testErronOnSeedTooShort() {
         let seed = Data([0])
         
-        guard case let .error(error) = ZKSyncCrypto.generatePrivateKey(seed: seed) else {
+        guard case let .failure(error) = ZKSyncCrypto.generatePrivateKey(seed: seed) else {
             XCTFail("Incorrect private key generated")
             return
         }
         
-        XCTAssertEqual(error as! ZKSyncCryptoError, ZKSyncCryptoError.seedTooShortError)
+        XCTAssertEqual(error, ZKSyncCryptoError.seedTooShortError)
     }
     
     func testErrorOnMusigMessageTooLong() {
@@ -100,12 +100,12 @@ class ZKSyncCryptoTests: XCTestCase {
         }
         
         let message = Data(Array(repeating: 0, count: 93))
-
-        guard case let .error(error) = ZKSyncCrypto.signMessage(privateKey: privateKey, message: message) else {
+        
+        guard case let .failure(error) = ZKSyncCrypto.signMessage(privateKey: privateKey, message: message) else {
             XCTFail("Incorrect signature generated")
             return
         }
-
-        XCTAssertEqual(error as! ZKSyncCryptoError, ZKSyncCryptoError.musigTooLongError)
+        
+        XCTAssertEqual(error, ZKSyncCryptoError.musigTooLongError)
     }
 }
