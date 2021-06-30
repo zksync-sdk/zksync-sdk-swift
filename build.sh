@@ -57,6 +57,11 @@ rm -rf ${DEPENDENCIES_FOLDER}
 mkdir ${DEPENDENCIES_FOLDER}
 cp -r ZKSyncCrypto.xcframework ${DEPENDENCIES_FOLDER}
 
+rm -rf x86_64
+rm -rf amr64
+rm -rf ZKSyncCrypto.xcarchive
+rm -rf ZKSyncCrypto.xcframework
+
 # Workaround, which allows to fix build-related issue, which happens when xcframework 
 # name is similar to class name, which resides in this xcframework. More information can be found here:
 # https://developer.apple.com/forums/thread/123253
