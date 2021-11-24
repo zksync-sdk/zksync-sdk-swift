@@ -10,8 +10,7 @@ import Foundation
 /**
  * Access to the ZksCrypto native library
  *
- * This class provides methods for interaction the ZksCrypto native library.
- *
+ * This class provides methods for interaction with ZksCrypto native library.
  */
 public class ZKSyncCrypto: NSObject {
     
@@ -25,12 +24,10 @@ public class ZKSyncCrypto: NSObject {
             
             switch resultCode {
             case PRIVATE_KEY_FROM_SEED_OK:
-                let bufferPointer = [UInt8](UnsafeBufferPointer(start: &result[0].data.0, count: ZKPrivateKey.bytesLength))
+                let bufferPointer = Data(value: &result[0].data.0, count: ZKPrivateKey.bytesLength)
                 return .success(ZKPrivateKey(bufferPointer))
-                
             case PRIVATE_KEY_FROM_SEED_SEED_TOO_SHORT:
                 return .failure(.seedTooShortError)
-                
             default:
                 return .failure(.unsupportedOperation)
             }
@@ -55,9 +52,8 @@ public class ZKSyncCrypto: NSObject {
             
             switch resultCode {
             case PUBLIC_KEY_FROM_PRIVATE_OK:
-                let bufferPointer = [UInt8](UnsafeBufferPointer(start: &result[0].data.0, count: ZKPackedPublicKey.bytesLength))
+                let bufferPointer = Data(value: &result[0].data.0, count: ZKPackedPublicKey.bytesLength)
                 return .success(ZKPackedPublicKey(bufferPointer))
-                
             default:
                 return .failure(.unsupportedOperation)
             }
@@ -82,9 +78,8 @@ public class ZKSyncCrypto: NSObject {
             
             switch resultCode {
             case PUBKEY_HASH_FROM_PUBKEY_OK:
-                let bufferPointer = [UInt8](UnsafeBufferPointer(start: &result[0].data.0, count: ZKPublicHash.bytesLength))
+                let bufferPointer = Data(value: &result[0].data.0, count: ZKPublicHash.bytesLength)
                 return .success(ZKPublicHash(bufferPointer))
-
             default:
                 return .failure(.unsupportedOperation)
             }
@@ -119,12 +114,10 @@ public class ZKSyncCrypto: NSObject {
                 
                 switch resultCode {
                 case MUSIG_SIGN_OK:
-                    let bufferPointer = [UInt8](UnsafeBufferPointer(start: &result[0].data.0, count: ZKSignature.bytesLength))
+                    let bufferPointer = Data(value: &result[0].data.0, count: ZKSignature.bytesLength)
                     return .success(ZKSignature(bufferPointer))
-
                 case MUSIG_SIGN_MSG_TOO_LONG:
                     return .failure(.musigTooLongError)
-                    
                 default:
                     return .failure(.unsupportedOperation)
                 }
