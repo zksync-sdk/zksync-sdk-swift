@@ -10,7 +10,7 @@ import Foundation
 
 extension Data {
     
-    init<T>( value: inout T, count: Int) {
+    init<T>(value: inout T, count: Int) {
         self = withUnsafePointer(to: &value) { (pointer: UnsafePointer<T>) -> Data in
             return Data(buffer: UnsafeBufferPointer(start: pointer, count: count))
         }
