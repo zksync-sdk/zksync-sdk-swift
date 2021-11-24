@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47B1957425C444140011148B /* libzkscrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B1957325C444140011148B /* libzkscrypto.a */; };
+		8A88FF722748828100B9995C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88FF712748828100B9995C /* Data.swift */; };
 		F632CC3F2541375F00C48201 /* ZKSyncCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F632CC3D2541375F00C48201 /* ZKSyncCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6730FAF25429D4100052101 /* ZKSyncCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6730FAE25429D4100052101 /* ZKSyncCryptoTests.swift */; };
 		F6730FB125429D4100052101 /* ZKSyncCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F632CC3A2541375F00C48201 /* ZKSyncCrypto.framework */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		47B1957325C444140011148B /* libzkscrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzkscrypto.a; sourceTree = "<group>"; };
+		8A88FF712748828100B9995C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F632CC3A2541375F00C48201 /* ZKSyncCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKSyncCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F632CC3D2541375F00C48201 /* ZKSyncCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKSyncCrypto.h; sourceTree = "<group>"; };
 		F632CC3E2541375F00C48201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A88FF702748827100B9995C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A88FF712748828100B9995C /* Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F632CC302541375F00C48201 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		F632CC3C2541375F00C48201 /* ZKSyncCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				8A88FF702748827100B9995C /* Extensions */,
 				F632CC3D2541375F00C48201 /* ZKSyncCrypto.h */,
 				F6ACFF0125414B1700019C73 /* ZKSyncCrypto+Types.swift */,
 				F6ACFF0225414B1700019C73 /* ZKSyncCrypto.swift */,
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6ACFF0425414B1700019C73 /* ZKSyncCrypto.swift in Sources */,
+				8A88FF722748828100B9995C /* Data.swift in Sources */,
 				F6ACFF0325414B1700019C73 /* ZKSyncCrypto+Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
