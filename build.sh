@@ -19,11 +19,11 @@ xcodebuild clean archive \
             -archivePath ZKSyncCrypto.xcarchive \
             SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
-rm -rf x86_64
-mkdir x86_64
+rm -rf arm64_x86_64
+mkdir arm64_x86_64
 
-cp -r ZKSyncCrypto.xcarchive/Products/Library/Frameworks/ZKSyncCrypto.framework x86_64/ZKSyncCrypto.framework
-file x86_64/ZKSyncCrypto.framework/ZKSyncCrypto
+cp -r ZKSyncCrypto.xcarchive/Products/Library/Frameworks/ZKSyncCrypto.framework arm64_x86_64/ZKSyncCrypto.framework
+file arm64_x86_64/ZKSyncCrypto.framework/ZKSyncCrypto
 
 rm -rf ZKSyncCrypto.xcarchive
 
@@ -45,7 +45,7 @@ file arm64/ZKSyncCrypto.framework/ZKSyncCrypto
 rm -rf ZKSyncCrypto.xcframework
 
 xcodebuild -create-xcframework \
-            -framework x86_64/ZKSyncCrypto.framework \
+            -framework arm64_x86_64/ZKSyncCrypto.framework \
             -framework arm64/ZKSyncCrypto.framework \
             -output ZKSyncCrypto.xcframework
 
@@ -57,7 +57,7 @@ rm -rf ${DEPENDENCIES_FOLDER}
 mkdir ${DEPENDENCIES_FOLDER}
 cp -r ZKSyncCrypto.xcframework ${DEPENDENCIES_FOLDER}
 
-rm -rf x86_64
+rm -rf arm64_x86_64
 rm -rf arm64
 rm -rf ZKSyncCrypto.xcarchive
 rm -rf ZKSyncCrypto.xcframework
